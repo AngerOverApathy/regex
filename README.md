@@ -21,7 +21,7 @@ The regular expression I will be explaining is: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\
 ## Regex Components
 
 ### Anchors
-/<mark>^</mark>([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})<mark>$</mark>/
+/`^`([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})`$`/
 
 ### Quantifiers
 
