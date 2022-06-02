@@ -22,12 +22,24 @@ The regular expression I will be explaining is: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\
 
 ### Anchors
 /`^`([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})`$`/
+The `^` anchor represents the beginning of the string, with the following character (in this case `(`) being the start of the string. The `$` anchor signifies the end of the string.
 
 ### Quantifiers
+/^([a-z0-9_\.-]`+`)@([\da-z\.-]`+`)\.([a-z\.]`{2,6}`)$/
+Quantifiers set the string limits that your regex will match. Essentially, they determine the minimum and maximum amount of characters your regex will look for. They are greedy, which means they will match as many patterns as possible.
+`+` - matches the pattern one or more times
+`{2,6}` - will match a minimum of 2 to a maximum of 6 times
 
 ### OR Operator
+`|`
+There is no OR operator in this regex. 
 
 ### Character Classes
+/^([a-z0-9_\`.`-]+)@([`\d`a-z\`.`-]+)\`.`([a-z\`.`]{2,6})$/
+
+Character
+`.` - Will match any character except \n (new line)
+`\d` — Matches any numeral digit. This class is equivalent to the bracket expression 0-9.
 
 ### Flags
 
@@ -45,6 +57,6 @@ The regular expression I will be explaining is: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
-# regex
-# regex
+
+# See My Work:
+https://github.com/AngerOverApathy
